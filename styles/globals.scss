@@ -1,0 +1,43 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(85, 85, 28);
+    color: white;
+}
+.center {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+h2 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  * {
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .center {
+    max-width: 90%;
+  }
+}

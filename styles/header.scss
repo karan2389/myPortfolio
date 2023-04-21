@@ -1,0 +1,79 @@
+header {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    justify-content: space-around;
+    color: olive;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: sticky;
+}
+
+header nav a {
+    text-decoration: none;
+    color: olive;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+header nav a:hover {
+    color: olive;
+    border: 2px solid olive;
+    border-radius: 10px;
+    transition: all 150ms;
+    transform:translate(10px, 10px);
+}
+header div.social a {
+    display: inline-block;
+    color: olive;
+    padding: 5px;
+}
+header div.social a:hover {
+    color: wheat;
+    transition: all 150ms;
+}
+header div.social a svg {
+    height:40px;
+   
+}
+header div.social a svg:hover {
+    height: 50px;
+}
+header img.headerImg {
+    height: 60px;
+    color: rgb(107, 94, 69);
+}
+@media only screen and (max-width: 768px) {
+    header {
+        // flex-wrap: wrap;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    header nav {
+        order: 1;
+        width: 100%;
+        padding: 10px;
+    }
+
+    header nav a {
+        display: block;
+        padding: 10px 0;
+        text-align: right;
+        font-size: 16px;
+    }
+
+    header div.social {
+        order: 1;
+        display: none;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    header div.social a {
+        margin: 0 10px;
+    }
+}

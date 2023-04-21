@@ -1,0 +1,46 @@
+section#portfolio {
+  text-align: center;
+  padding: 50px;
+}
+.center h2 {
+  padding: 50px;
+  font-size: 50px;
+  font-family: cursive;
+   
+}
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  a {
+    display: block;
+    opacity: 0;
+    text-decoration: none;
+    color: rgb(203, 203, 203);
+    transition: all 0.3s ease-in-out;
+  }
+  @for $i from 1 through 20 {
+    .skill-box:nth-child(#{$i + 1}) {
+      transition-delay: #{$i * 0.1s};
+    }
+
+    img {
+      height: 500px;
+      width: 1000px;
+    }
+    p {
+      padding: 20px;
+    }
+  }
+}
+
+section#portfolio.visible a {
+  opacity: 1;
+}
+@media (max-width: 1000px) {
+  .portfolio-container img {
+    width: 300px;
+    height: 100px;
+  }
+  
+}

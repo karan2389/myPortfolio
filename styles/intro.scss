@@ -1,0 +1,90 @@
+section#intro {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+    
+}
+
+section#intro p {
+    color: #d3d3d3;
+    font-size: 45px;
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: all 0.3s linear;
+    position: relative;
+    left: -50;
+}
+section#intro.visible p {
+    opacity: 1;
+}
+section#intro span {
+    color: olive;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-family: cursive;
+    font-weight: 600;
+}
+
+section#intro a {
+    border: 3px solid rgb(167, 167, 167);
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: rgb(186, 185, 185);
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.3s linear;
+    position: relative;
+    top: -40;
+}
+section#intro.visible a {
+    opacity: 1;
+}
+section#intro a:hover {
+    background-color: olive;
+    border-color: white;
+    color: white;
+    border-radius: 20px;
+    transition: all 150ms;
+    object-position: inherit;
+}
+
+section#intro img {
+max-width: 300px;
+opacity: 0;
+transition: opacity .5s linear;
+}
+
+section#intro.visible img {
+    opacity: 1;
+}
+/* Styles for screens 768px and narrower */
+@media only screen and (max-width: 768px) {
+    section#intro {
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section#intro p {
+        font-size: 30px;
+        margin-bottom: 20px;
+        left: 0;
+    }
+
+    section#intro span {
+        font-size: 40px;
+    }
+
+    section#intro a {
+        top: 0;
+    }
+
+    section#intro img {
+        display: none;
+    }
+}

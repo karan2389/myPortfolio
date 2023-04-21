@@ -1,0 +1,34 @@
+section#contact {
+  border-top: 2px solid rgb(0, 0, 0);
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  padding: 100px 0;
+  h2 {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    background-color:rgb(85, 85, 28);
+    top: -28px;
+    width: 350px;
+    margin-left: -175px;
+    display: inline-block;
+    padding: 0 30px;
+  }
+}
+div.box {
+    display:  inline-block;
+    border: 2px solid rgb(152, 152, 152);
+    padding: 10px;
+    width: 500px;
+    margin: 20px;
+    color: rgb(188, 188, 59);
+    background-color: black;
+    font-size: 17px;
+}
+div.box:hover {
+    background-color:rgb(50, 50, 34);
+    transition: all 150ms;
+    transform: translate(10px , 10px);
+}
+
